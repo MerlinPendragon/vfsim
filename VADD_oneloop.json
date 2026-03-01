@@ -1,0 +1,20 @@
+{
+  "dtype": "fp32",
+  "params": {
+    "I": 32,
+    "U": 2
+  },
+  "program": [
+    {
+      "type": "loop",
+      "iters": "I",
+      "unroll": "U",
+      "body": [
+        { "type": "inst", "op": "VLD", "dst": ["V1"], "src": ["memA"] },
+        { "type": "inst", "op": "VLD", "dst": ["V2"], "src": ["memB"] },
+        { "type": "inst", "op": "VADD", "dst": ["V3"], "src": ["V1", "V2"] },
+        { "type": "inst", "op": "VST", "dst": ["memB"], "src": ["V3"] }
+      ]
+    }
+  ]
+}

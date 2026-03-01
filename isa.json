@@ -1,0 +1,18 @@
+{
+  "defaults": {
+    "vf_startup_cost": 23,
+    "vf_drain_cost": 12
+  },
+  "instructions": {
+    "VADDS": {
+      "fp32": {
+        "pipeline_startup_cost": 6,
+        "latency": 7,
+        "throughput": 1,
+        "pipeline_drain_cost": 5,
+        "data_load_cost": 9,
+        "data_store_cost": 10
+      }
+    }
+  }
+}

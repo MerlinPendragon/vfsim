@@ -1,0 +1,10 @@
+{
+  "name": "Ascend_VF",
+  "issue_ports": 2,
+  "load_ports": 2,
+  "store_ports": 1,
+  "IDU_window_width": 6,
+  "IDU_issue_width": 5,
+  "OoO_window_width": 64,
+  "vreg_num": 68
+}
